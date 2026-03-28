@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Resume of Angelo Reyes — AI/ML, hardware, and embedded systems."
+    />
+    <title>Angelo Reyes — Resume</title>
+
+    <meta property="og:title" content="Angelo Reyes — Resume" />
+    <meta
+      property="og:description"
+      content="AI/ML, hardware, and embedded systems projects + experience."
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <script>
+      // Prevent theme flash on load.
+      (() => {
+        const stored = localStorage.getItem("theme");
+        const prefersDark =
+          window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches;
+        const theme = stored ?? (prefersDark ? "dark" : "light");
+        document.documentElement.dataset.theme = theme;
+      })();
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Angelo Reyes",
+        "url": "https://ANGELOREYES-afk.github.io/",
+        "sameAs": [
+          "https://github.com/ANGELOREYES-afk",
+          "https://www.linkedin.com/in/angelo-reyes"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <div class="brand-title">Angelo Reyes</div>
+          <div class="brand-subtitle">Resume</div>
+        </div>
+
+        <nav class="nav" aria-label="Primary">
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#github">GitHub</a>
+          <button class="theme-toggle" type="button" data-theme-toggle>
+            Theme
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="content" class="container">
+      <section class="hero" aria-label="Intro">
+        <div class="hero-left">
+          <h1>Angelo Reyes</h1>
+          <p class="lede">
+            Electrical Engineering (Texas A&amp;M, expected May 2029) — AI/ML,
+            embedded systems, and hardware security.
+          </p>
+
+          <div class="cta-row" aria-label="Contact links">
+            <a class="pill" href="mailto:angelohenaoreyes@yahoo.com">Email</a>
+            <a class="pill" href="tel:+12818320459">Phone</a>
+            <a
+              class="pill"
+              href="https://www.linkedin.com/in/angelo-reyes"
+              rel="me noopener"
+              target="_blank"
+              >LinkedIn</a
+            >
+            <a
+              class="pill"
+              href="https://github.com/ANGELOREYES-afk"
+              rel="me noopener"
+              target="_blank"
+              >GitHub</a
+            >
+            <a class="pill pill-strong" href="resume.pdf" download
+              >Download PDF</a
+            >
+          </div>
+
+          <p class="muted small">
+            Houston, TX • College Station, TX
+          </p>
+        </div>
+
+        <aside class="hero-right" aria-label="Highlights">
+          <div class="card">
+            <div class="card-title">Highlights</div>
+            <ul class="bullets">
+              <li>
+                Built AI-powered customer support agents (LLM fine-tuning,
+                Supabase + Python APIs).
+              </li>
+              <li>
+                Hardware security research (ZK/PQC workloads, CPU/FPGA
+                architecture).
+              </li>
+              <li>
+                Robotics leadership (Team 24626 Polaris, 3x world appearances).
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+
+      <section id="education" class="section">
+        <h2>Education</h2>
+        <div class="item">
+          <div class="item-top">
+            <div class="item-title">Texas A&amp;M University</div>
+            <div class="item-meta">College Station, TX</div>
+          </div>
+          <div class="item-sub">
+            B.S. in Electrical Engineering (in progress) • Expected May 2029
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <h2>Experience</h2>
+
+        <div class="item">
+          <div class="item-top">
+            <div class="item-title">Hardware Security Research</div>
+            <div class="item-meta">Nov 2025 – Present • College Station, TX</div>
+          </div>
+          <div class="item-sub">Texas A&amp;M with Dr. JV</div>
+          <ul class="bullets">
+            <li>
+              Worked on CPU architecture optimization for computation-heavy
+              cryptographic protocols (Zero-Knowledge proof workloads).
+            </li>
+            <li>
+              Focused on allocating algorithm cores (NTT, MSM, HASH functions,
+              Sum checks) and FPGA VSLI design.
+            </li>
+            <li>
+              Implemented NIST FIPS post-quantum lattice-based PQC with
+              learn-with-error encapsulation/de-capsulation.
+            </li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <div class="item-top">
+            <div class="item-title">Weather Physics Research Assistant</div>
+            <div class="item-meta">Feb 2025 • Houston, TX</div>
+          </div>
+          <div class="item-sub">University of Houston with Dr. Floryen</div>
+          <ul class="bullets">
+            <li>
+              Conducted dimensional analysis on NeuralGCM graphs to improve
+              predicted weather model clarity by 20%.
+            </li>
+            <li>
+              Analyzed ERA5 European dataset to validate NeuralGCM predictions.
+            </li>
+            <li>
+              Developed methods for detecting humidity, precipitation, and
+              temperature anomalies.
+            </li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <div class="item-top">
+            <div class="item-title">Project Manager for Facilitated Projects</div>
+            <div class="item-meta">Dec 2024 – Feb 2025 • Houston, TX</div>
+          </div>
+          <div class="item-sub">Science Fair Houston</div>
+          <ul class="bullets">
+            <li>
+              Managed detection of plant chemical properties from raw analog
+              data in a multi-sensor system.
+            </li>
+            <li>Designed PCB for embedded sensors with voltage regulation and Arduino Nano.</li>
+            <li>
+              Integrated AD9833 (wave generation), FDC2214 (capacitance touch),
+              and AS7263 (infrared processing).
+            </li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <div class="item-top">
+            <div class="item-title">AI/ML Engineer &amp; Founder</div>
+            <div class="item-meta">Jun 2024 – Jun 2025 • Houston, TX</div>
+          </div>
+          <div class="item-sub">Ankel Web Services</div>
+          <ul class="bullets">
+            <li>
+              Founded an AI-powered customer support web services company for
+              local businesses.
+            </li>
+            <li>
+              Fine-tuned large language models using client FAQ datasets and
+              prompt engineering to create autonomous agents.
+            </li>
+            <li>
+              Built full-stack applications with Supabase backend and Python API
+              services, achieving ~95% customer query accuracy.
+            </li>
+            <li>
+              Deployed scalable web services handling 50+ daily customer
+              interactions across multiple client businesses.
+            </li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <div class="item-top">
+            <div class="item-title">Aerospace Engineering Scholar</div>
+            <div class="item-meta">Jun 2023 – Jul 2023 • Houston, TX</div>
+          </div>
+          <div class="item-sub">Rice University</div>
+          <ul class="bullets">
+            <li>
+              Designed weather-balloon experiments under variable temperature,
+              pressure, and speeds at 85,000 ft.
+            </li>
+            <li>
+              Configured electronics for tracking telemetry sensing through LoRa
+              radio.
+            </li>
+            <li>
+              Programmed Arduino microcontroller for raw data acquisition and
+              power distribution management.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <h2>Projects</h2>
+
+        <div class="grid">
+          <div class="card">
+            <div class="card-title">FinTech AI Recommendation System</div>
+            <div class="card-meta">Python, LLMs, Supabase, TensorFlow • TAMU Hackathon 2023</div>
+            <ul class="bullets">
+              <li>
+                Developed a financial recommendation engine using fine-tuned
+                language models and transaction data analysis.
+              </li>
+              <li>
+                Implemented a Supabase backend with Python API for real-time
+                processing and recommendations.
+              </li>
+              <li>
+                Applied NLP to analyze spending patterns and generate
+                personalized financial advice.
+              </li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="card-title">Pixel Generation ML/App</div>
+            <div class="card-meta">Swift, Python, TensorFlow, Bluetooth LE • Jul–Sep 2025</div>
+            <ul class="bullets">
+              <li>Built an iOS app for pixel art creation and wireless transmission.</li>
+              <li>Implemented WiFi → HM-10 BLE radio communication for real-time transfer.</li>
+              <li>Applied DDPMs for pixel art generation.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="card-title">ORP Sensor System</div>
+            <div class="card-meta">Arduino, C++, I2C, Electrochemistry • 2024</div>
+            <ul class="bullets">
+              <li>Built breadboard voltmeter with LCD display using I2C.</li>
+              <li>Measured redox potential for water salinity detection (0–5000ppm).</li>
+              <li>Constructed agar salt bridge for ionic movement between electrodes.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="card-title">Haptic Feedback Wheel</div>
+            <div class="card-meta">Moteus, BLDC, Onshape, FOC • 2024</div>
+            <ul class="bullets">
+              <li>
+                Reverse engineered a racing wheel using a 3-phase BLDC motor via
+                Assetto Corsa telemetry.
+              </li>
+              <li>
+                Used CAN between Moteus and PC to run torque/velocity frames
+                with field-oriented control.
+              </li>
+              <li>3D designed pedals and mounts.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="leadership" class="section">
+        <h2>Leadership &amp; Community</h2>
+
+        <div class="item">
+          <div class="item-top">
+            <div class="item-title">Technical Lead — ThinkTank TAMU</div>
+            <div class="item-meta">Aug 2025 – Present • College Station, TX</div>
+          </div>
+          <div class="item-sub">
+            AIAA Undergraduate Space Mission Design Challenge
+          </div>
+          <ul class="bullets">
+            <li>
+              Designed satellite subsystems (telemetry, solar weather monitoring,
+              comm protocols, mission architecture).
+            </li>
+            <li>
+              Proposed ideas for black-shadow periods between Mars/Earth direct
+              transmission lines with heliocentric CubeSat orbits.
+            </li>
+            <li>
+              Led ConOps, trade studies, and modeling for the consolidated CubeSat instrument.
+            </li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <div class="item-top">
+            <div class="item-title">Ambassador/President — Team 24626 Polaris</div>
+            <div class="item-meta">Sep 2021 – Jun 2025 • Houston, TX</div>
+          </div>
+          <div class="item-sub">Katy Robotics Alliance (VEX)</div>
+          <ul class="bullets">
+            <li>Led the team across 50+ competitions (ops + technical).</li>
+            <li>
+              Developed training programs for powertrain systems, Inventor CAD,
+              and autonomous programming.
+            </li>
+            <li>Secured $3,000 in annual grants from MTS sponsors.</li>
+            <li>
+              Achieved 3x VEX World Championship appearances: 1st in Texas,
+              Texas Finalist, and Top 5 Skills State.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <h2>Technical Skills</h2>
+        <div class="grid">
+          <div class="card">
+            <div class="card-title">Languages</div>
+            <p class="card-text">
+              C++ (Robotics), TypeScript (Web Development), Python (Machine Learning),
+              Swift, LaTeX
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-title">Hardware</div>
+            <p class="card-text">
+              PCB Design, Embedded Systems, Arduino, BLDC / Axial Flux motors
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-title">Software</div>
+            <p class="card-text">
+              Onshape, KiCad, Visual Studio Code, GitHub, Stack, Overleaf, Verilog
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-title">Interests</div>
+            <p class="card-text">
+              CPU infrastructure, cycloidal BLDC motor actuators, convolution neural
+              networks, autonomous driving (L3+), ASIC design
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="github" class="section">
+        <h2>GitHub</h2>
+        <div class="github-wrap">
+          <div class="card github-profile" aria-live="polite">
+            <div class="card-title">Profile</div>
+            <div class="github-profile-inner" data-github-profile>
+              <div class="skeleton avatar-skel" aria-hidden="true"></div>
+              <div class="skeleton line-skel" aria-hidden="true"></div>
+              <div class="skeleton line-skel" aria-hidden="true"></div>
+            </div>
+            <p class="muted small" data-github-profile-status></p>
+          </div>
+
+          <div class="card github-repos" aria-live="polite">
+            <div class="card-title">Recent Repos</div>
+            <div class="repo-list" data-github-repos>
+              <div class="skeleton line-skel" aria-hidden="true"></div>
+              <div class="skeleton line-skel" aria-hidden="true"></div>
+              <div class="skeleton line-skel" aria-hidden="true"></div>
+            </div>
+            <p class="muted small" data-github-repos-status></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="muted small">
+          Built as a static GitHub Pages site. Edit index.html to update your
+          resume content.
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
